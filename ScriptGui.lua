@@ -314,7 +314,7 @@ coroutine.wrap(ZXZK_fake_script)()
 local function ECEWKG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	local admins = {'GHHTWHOWR', 'asimo8565', 'aidencdcarter', 'ReinerGamesYT', 'kountourasagglos'}
+	local admins = {'GHHTWHOWR', 'asimo8565', 'aidencdcarter', 'ReinerGamesYT'}
 			game.Players.PlayerAdded:Connect(function(v)
 				for _, w in pairs(admins) do
 					if v.Name == w then
