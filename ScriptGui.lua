@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
@@ -19,7 +14,7 @@ local TextButton_6 = Instance.new("TextButton")
 local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
 
---Properties:
+
 
 Frame.Parent = game.StarterGui.ScreenGui
 Frame.Active = true
@@ -133,7 +128,6 @@ TextButton_8.Text = "Copy Tools"
 TextButton_8.TextColor3 = Color3.fromRGB(132, 245, 11)
 TextButton_8.TextSize = 16.000
 
--- Scripts:
 
 local function WMCCIH_fake_script() -- Frame.rag 
 	local script = Instance.new('LocalScript', Frame)
