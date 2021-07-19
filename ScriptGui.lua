@@ -1,3 +1,9 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
@@ -14,9 +20,13 @@ local TextButton_6 = Instance.new("TextButton")
 local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
 
+--Properties:
 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 999999999
 
-Frame.Parent = game.StarterGui.ScreenGui
+Frame.Parent = ScreenGui
 Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Frame.Position = UDim2.new(0.286493868, 0, 0.276881725, 0)
@@ -128,8 +138,9 @@ TextButton_8.Text = "Copy Tools"
 TextButton_8.TextColor3 = Color3.fromRGB(132, 245, 11)
 TextButton_8.TextSize = 16.000
 
+-- Scripts:
 
-local function WMCCIH_fake_script() -- Frame.rag 
+local function OSFZUK_fake_script() -- Frame.rag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -170,16 +181,16 @@ local function WMCCIH_fake_script() -- Frame.rag
 	
 	dragify(script.Parent.Parent.Frame)
 end
-coroutine.wrap(WMCCIH_fake_script)()
-local function UMGT_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OSFZUK_fake_script)()
+local function JHYIGE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.SecretGui.Enabled = true
 		end)
 end
-coroutine.wrap(UMGT_fake_script)()
-local function KBCFWQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JHYIGE_fake_script)()
+local function KLZT_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -193,8 +204,8 @@ local function KBCFWQ_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KBCFWQ_fake_script)()
-local function CXMJQ_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(KLZT_fake_script)()
+local function IFBCD_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local players = game:GetService("Players")
@@ -221,16 +232,16 @@ local function CXMJQ_fake_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CXMJQ_fake_script)()
-local function UILJW_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(IFBCD_fake_script)()
+local function GLICNF_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer:kick("You Left The Server")
 		end)
 end
-coroutine.wrap(UILJW_fake_script)()
-local function TTOQT_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(GLICNF_fake_script)()
+local function ETSYS_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local LocalPlayer = game.Players.LocalPlayer
@@ -243,8 +254,8 @@ local function TTOQT_fake_script() -- TextButton_4.LocalScript
 		end
 		end)
 end
-coroutine.wrap(TTOQT_fake_script)()
-local function MCPBQG_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ETSYS_fake_script)()
+local function TFHNHMT_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -253,8 +264,8 @@ local function MCPBQG_fake_script() -- TextButton_5.LocalScript
 		end
 		end)
 end
-coroutine.wrap(MCPBQG_fake_script)()
-local function QVQH_fake_script() -- Frame.key 
+coroutine.wrap(TFHNHMT_fake_script)()
+local function GUCVHOC_fake_script() -- Frame.key 
 	local script = Instance.new('LocalScript', Frame)
 
 	local frame = script.Parent.Parent.Frame
@@ -280,16 +291,16 @@ local function QVQH_fake_script() -- Frame.key
 	end)
 	
 end
-coroutine.wrap(QVQH_fake_script)()
-local function IBBPAD_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(GUCVHOC_fake_script)()
+local function RRNUA_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("Players").LocalPlayer.PlayerGui.SecretGui.Frame.HealRakeInstant.RemoteEvent:FireServer()
 		end)
 end
-coroutine.wrap(IBBPAD_fake_script)()
-local function ZXZK_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(RRNUA_fake_script)()
+local function EJGUAX_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -310,11 +321,11 @@ local function ZXZK_fake_script() -- TextButton_7.LocalScript
 		end
 		end)
 end
-coroutine.wrap(ZXZK_fake_script)()
-local function ECEWKG_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EJGUAX_fake_script)()
+local function CORWT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	local admins = {'GHHTWHOWR', 'asimo8565', 'aidencdcarter', 'ReinerGamesYT'}
+	local admins = {'GHHTWHOWR', 'asimo8565', 'aidencdcarter', 'ReinerGamesYT', 'kountourasagglos'}
 			game.Players.PlayerAdded:Connect(function(v)
 				for _, w in pairs(admins) do
 					if v.Name == w then
@@ -345,8 +356,8 @@ local function ECEWKG_fake_script() -- Frame.LocalScript
 				end
 			end)
 end
-coroutine.wrap(ECEWKG_fake_script)()
-local function OMWTFWE_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(CORWT_fake_script)()
+local function OKSF_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -372,4 +383,4 @@ local function OMWTFWE_fake_script() -- TextButton_8.LocalScript
 		copy(game:GetService("ReplicatedStorage"))
 		end)
 end
-coroutine.wrap(OMWTFWE_fake_script)()
+coroutine.wrap(OKSF_fake_script)()
